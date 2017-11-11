@@ -10,9 +10,16 @@ import UIKit
 
 class PostURLViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var postUrlLabel: UILabel!
+	@IBOutlet weak var postUrlTextField: UITextField!
+	@IBAction func postUrlButton(_ sender: Any) {
+		let url = postUrlTextField.text!
+		print(url)
+	}
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-
+		
         // Do any additional setup after loading the view.
     }
 
