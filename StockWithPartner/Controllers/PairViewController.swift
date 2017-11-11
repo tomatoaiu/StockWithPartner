@@ -1,5 +1,5 @@
 //
-//  PiarViewController.swift
+//  PairViewController.swift
 //  StockWithPartner
 //
 //  Created by TaikiFnit on 2017/11/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PiarViewController: UIViewController {
+class PairViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
