@@ -30,6 +30,7 @@
 		ACF0B7961FB6FCD900D24190 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B7951FB6FCD900D24190 /* PairViewController.swift */; };
 		ACF0B7991FB6FED900D24190 /* PostPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */; };
 		ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */; };
+		ACF0B79E1FB7080600D24190 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B79D1FB7080600D24190 /* Login.swift */; };
 		B627EA5288E564A6E4FB9CF0 /* Pods_StockWithPartnerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B751BAA8797DE93E7879603 /* Pods_StockWithPartnerUITests.framework */; };
 		BBA43F66F580D7CC65F92092 /* Pods_StockWithPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767B3EFAFBB958E0A16EE3D8 /* Pods_StockWithPartner.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		ACF0B7951FB6FCD900D24190 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
 		ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostPlaceCell.xib; sourceTree = "<group>"; };
 		ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		ACF0B79D1FB7080600D24190 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		FB34E28A7F1B5D95A559ABA3 /* Pods-StockWithPartnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWithPartnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE58F50BB7AF1A19E7BE335C /* Pods_StockWithPartnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockWithPartnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE695561C03FEBEB45EE45D8 /* Pods-StockWithPartnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWithPartnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		ACF0B7701FB6F78600D24190 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACF0B79D1FB7080600D24190 /* Login.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -433,9 +436,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartner/Pods-StockWithPartner-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,11 +539,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartner/Pods-StockWithPartner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -554,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF0B7821FB6F93000D24190 /* LoginViewController.swift in Sources */,
+				ACF0B79E1FB7080600D24190 /* Login.swift in Sources */,
 				ACF0B78E1FB6FAB000D24190 /* PostDetailViewController.swift in Sources */,
 				AC4C5E5B1FB6EA57009A854C /* AppDelegate.swift in Sources */,
 				ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */,

@@ -8,6 +8,7 @@ target 'StockWithPartner' do
   # Pods for StockWithPartner
   
   pod 'Firebase/Core'
+  pod 'GoogleSignIn'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
