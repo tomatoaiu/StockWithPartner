@@ -16,37 +16,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         let postPlace: UINib = UINib(nibName: "PostPlaceCell", bundle: nil)
         tableView.register(postPlace, forCellReuseIdentifier: "postPlace")
         
-        self.tabBarItem.image = UIImage.fontAwesomeIcon(name: .home, textColor: UIColor.white, size: CGSize(width: 30, height: 30))
-        self.tabBarController?.tabBar.layer.borderWidth = 0.50
-        self.tabBarController?.tabBar.layer.borderColor = UIColor.clear.cgColor
-        self.tabBarController?.tabBar.clipsToBounds = true
-        
-
-        // Do any additional setup after loading the view.
+        self.tableView.estimatedRowHeight = 190
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.backgroundColor = UIColor.clear
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
@@ -54,12 +35,21 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postPlace", for: indexPath) as! PostPlaceTableViewCell
         
-        cell.setValues(title: "fnit \(indexPath.row)")
+        cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+
     }
 }
