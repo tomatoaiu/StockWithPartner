@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xL1-Yl-vl7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pair Complete View Controller-->
+        <scene sceneID="kEe-nQ-p35">
+            <objects>
+                <viewController id="xL1-Yl-vl7" customClass="PairCompleteViewController" customModule="StockWithPartner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="69o-UB-8if">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PairComplete.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="P05-e1-jag">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lK1-IQ-eTP">
+                                <rect key="frame" x="176.5" y="315" width="22.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOV-cY-E1W">
+                                <rect key="frame" x="50" y="553" width="275" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <state key="normal" title="GetStarted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wuj-8d-EJw" kind="presentation" id="64y-Tw-5aW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makoto Kituya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC3-m2-ZPR">
+                                <rect key="frame" x="97" y="358.5" width="181.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taiki Watanabe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbS-5x-dft">
+                                <rect key="frame" x="92.5" y="276.5" width="191.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy Your Life!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwV-d2-ZR9">
+                                <rect key="frame" x="49.5" y="100" width="276" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P05-e1-jag" secondAttribute="bottom" id="1pW-g4-CBs"/>
+                            <constraint firstItem="tC3-m2-ZPR" firstAttribute="centerX" secondItem="69o-UB-8if" secondAttribute="centerX" id="SmA-oc-yFb"/>
+                            <constraint firstItem="lK1-IQ-eTP" firstAttribute="centerX" secondItem="69o-UB-8if" secondAttribute="centerX" id="WMv-e6-bXh"/>
+                            <constraint firstItem="P05-e1-jag" firstAttribute="top" secondItem="69o-UB-8if" secondAttribute="top" id="XAP-Zj-O9I"/>
+                            <constraint firstItem="6YK-b4-LvR" firstAttribute="bottom" secondItem="hOV-cY-E1W" secondAttribute="bottom" constant="70" id="XaN-uM-WYj"/>
+                            <constraint firstAttribute="trailing" secondItem="P05-e1-jag" secondAttribute="trailing" id="XnN-7h-5ev"/>
+                            <constraint firstItem="lK1-IQ-eTP" firstAttribute="centerY" secondItem="69o-UB-8if" secondAttribute="centerY" id="Xo4-9O-akk"/>
+                            <constraint firstItem="LbS-5x-dft" firstAttribute="centerX" secondItem="69o-UB-8if" secondAttribute="centerX" id="aqP-Uv-hR9"/>
+                            <constraint firstItem="tC3-m2-ZPR" firstAttribute="top" secondItem="lK1-IQ-eTP" secondAttribute="bottom" constant="5" id="bYZ-Nt-wHF"/>
+                            <constraint firstItem="hOV-cY-E1W" firstAttribute="leading" secondItem="6YK-b4-LvR" secondAttribute="leading" constant="50" id="f1L-VJ-Ns4"/>
+                            <constraint firstItem="mwV-d2-ZR9" firstAttribute="centerX" secondItem="69o-UB-8if" secondAttribute="centerX" id="jNM-ke-p98"/>
+                            <constraint firstItem="mwV-d2-ZR9" firstAttribute="top" secondItem="6YK-b4-LvR" secondAttribute="top" constant="80" id="kfg-lf-yLh"/>
+                            <constraint firstItem="lK1-IQ-eTP" firstAttribute="top" secondItem="LbS-5x-dft" secondAttribute="bottom" constant="5" id="rEz-xT-mlG"/>
+                            <constraint firstItem="P05-e1-jag" firstAttribute="leading" secondItem="69o-UB-8if" secondAttribute="leading" id="vUj-EB-ry4"/>
+                            <constraint firstItem="6YK-b4-LvR" firstAttribute="trailing" secondItem="hOV-cY-E1W" secondAttribute="trailing" constant="50" id="zFQ-BV-bj9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6YK-b4-LvR"/>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="hOV-cY-E1W" id="rkI-UB-cV7"/>
+                        <outlet property="myNameLabel" destination="LbS-5x-dft" id="96d-3Y-XWq"/>
+                        <outlet property="yourNameLabel" destination="tC3-m2-ZPR" id="W1h-xG-4nI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6g-CY-ob6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-146.17691154422789"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Il8-h2-LZi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="wuj-8d-EJw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoW-O4-mQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744" y="-112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PairComplete.JPG" width="5184" height="3456"/>
+    </resources>
+</document>

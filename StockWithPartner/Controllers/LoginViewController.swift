@@ -7,29 +7,57 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+import SVProgressHUD
 
-class LoginViewController: UIViewController {
+
+class LoginViewController: UIViewController, GIDSignInUIDelegate{
+    
+    @IBOutlet weak var signInButton: GIDSignInButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        signInButton.colorScheme = GIDSignInButtonColorScheme.light
+        signInButton.style = GIDSignInButtonStyle.wide
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func firebaseLogin(_ credential: AuthCredential) {
+
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let _ = error {
+                SVProgressHUD.showError(withStatus: "Error")
+                return
+            }
+            
+            guard let user = user else {
+                SVProgressHUD.showError(withStatus: "Error")
+                return
+            }
+            
+            // Sign in 完了
+            
+            Login.setDisplayName(me: user, callback: {
+                Login.hasPartner(callback: { (result) in
+                    SVProgressHUD.dismiss()
+                    
+                    if result {
+                        // すでにsign up済み
+                        self.performSegue(withIdentifier: "toMain", sender: nil)
+                        
+                    } else {
+                        // 初回ログイン
+                        self.performSegue(withIdentifier: "toPair", sender: nil)
+                    }
+                })
+            })
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
-
 }
