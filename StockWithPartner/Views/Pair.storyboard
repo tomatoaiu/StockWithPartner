@@ -30,6 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="57"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uB3-rd-era">
                                 <rect key="frame" x="30" y="299" width="315" height="69"/>
@@ -39,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="57"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell this code to your partner or Input your partner's code below" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xFO-M0-0ml">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tell this code to your partner or Input your partner's code below" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFO-M0-0ml">
                                 <rect key="frame" x="10" y="174" width="355" height="95"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20740582191780821" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

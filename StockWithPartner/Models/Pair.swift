@@ -72,6 +72,9 @@ class Pair {
                 
                 // ペア成立
                 
+                // リスナーのデタッチ
+                ref.child("users").child(me.uid).child("partner_uid").removeAllObservers()
+                
                 // 自分にpartnerのidを追加する
                 ref.child("users").child(me.uid).child("partner_uid").setValue(partnersUid, withCompletionBlock: { (error, meRef) in
                     // 相手のpairCodeを削除し,相手に自分のidを追加する

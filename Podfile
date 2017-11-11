@@ -16,6 +16,9 @@ target 'StockWithPartner' do
   
   # プログレスバー
   pod 'SVProgressHUD'
+  
+  # font awesone
+  pod 'FontAwesome.swift'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
@@ -30,6 +33,9 @@ target 'StockWithPartner' do
     
     # プログレスバー
     pod 'SVProgressHUD'
+    
+    # font awesone
+    pod 'FontAwesome.swift'
   end
 
   target 'StockWithPartnerUITests' do
@@ -45,6 +51,9 @@ target 'StockWithPartner' do
     
     # プログレスバー
     pod 'SVProgressHUD'
+    
+    # font awesone
+    pod 'FontAwesome.swift'
   end
 
 end
