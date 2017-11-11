@@ -8,15 +8,43 @@ target 'StockWithPartner' do
   # Pods for StockWithPartner
   
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
+  pod 'GoogleSignIn'
+  
+  # プログレスバー
+  pod 'SVProgressHUD'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'GoogleSignIn'
+    
+    # プログレスバー
+    pod 'SVProgressHUD'
   end
 
   target 'StockWithPartnerUITests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'GoogleSignIn'
+    
+    # プログレスバー
+    pod 'SVProgressHUD'
   end
 
 end

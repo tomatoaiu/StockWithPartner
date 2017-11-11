@@ -15,6 +15,13 @@
 		AC4C5E651FB6EA57009A854C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4C5E631FB6EA57009A854C /* LaunchScreen.storyboard */; };
 		AC4C5E701FB6EA57009A854C /* StockWithPartnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C5E6F1FB6EA57009A854C /* StockWithPartnerTests.swift */; };
 		AC4C5E7B1FB6EA57009A854C /* StockWithPartnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C5E7A1FB6EA57009A854C /* StockWithPartnerUITests.swift */; };
+		AC57C5951FB76D410031BDF7 /* PairComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57C5941FB76D410031BDF7 /* PairComplete.swift */; };
+		ACAED3B11FB7592C00DBA4B8 /* PairComplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAED3B01FB7592C00DBA4B8 /* PairComplete.storyboard */; };
+		ACAED3B31FB75A9E00DBA4B8 /* PairComplete.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAED3B21FB75A9E00DBA4B8 /* PairComplete.JPG */; };
+		ACAED3B51FB75DB900DBA4B8 /* PairCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAED3B41FB75DB900DBA4B8 /* PairCompleteViewController.swift */; };
+		ACEE50CD1FB72FDA00743387 /* LoginVisual.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACEE50CC1FB72FDA00743387 /* LoginVisual.JPG */; };
+		ACEE50CF1FB7323B00743387 /* PairVisual.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACEE50CE1FB7323B00743387 /* PairVisual.JPG */; };
+		ACEE50D11FB7434100743387 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE50D01FB7434100743387 /* Pair.swift */; };
 		ACF0B7741FB6F83900D24190 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7731FB6F83900D24190 /* Login.storyboard */; };
 		ACF0B7781FB6F85700D24190 /* PostURL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7771FB6F85700D24190 /* PostURL.storyboard */; };
 		ACF0B77A1FB6F87A00D24190 /* PostDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7791FB6F87A00D24190 /* PostDetail.storyboard */; };
@@ -30,6 +37,7 @@
 		ACF0B7961FB6FCD900D24190 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B7951FB6FCD900D24190 /* PairViewController.swift */; };
 		ACF0B7991FB6FED900D24190 /* PostPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */; };
 		ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */; };
+		ACF0B79E1FB7080600D24190 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B79D1FB7080600D24190 /* Login.swift */; };
 		B627EA5288E564A6E4FB9CF0 /* Pods_StockWithPartnerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B751BAA8797DE93E7879603 /* Pods_StockWithPartnerUITests.framework */; };
 		BBA43F66F580D7CC65F92092 /* Pods_StockWithPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767B3EFAFBB958E0A16EE3D8 /* Pods_StockWithPartner.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +79,13 @@
 		AC4C5E761FB6EA57009A854C /* StockWithPartnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockWithPartnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4C5E7A1FB6EA57009A854C /* StockWithPartnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWithPartnerUITests.swift; sourceTree = "<group>"; };
 		AC4C5E7C1FB6EA57009A854C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC57C5941FB76D410031BDF7 /* PairComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairComplete.swift; sourceTree = "<group>"; };
+		ACAED3B01FB7592C00DBA4B8 /* PairComplete.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairComplete.storyboard; sourceTree = "<group>"; };
+		ACAED3B21FB75A9E00DBA4B8 /* PairComplete.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PairComplete.JPG; sourceTree = "<group>"; };
+		ACAED3B41FB75DB900DBA4B8 /* PairCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairCompleteViewController.swift; sourceTree = "<group>"; };
+		ACEE50CC1FB72FDA00743387 /* LoginVisual.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginVisual.JPG; sourceTree = "<group>"; };
+		ACEE50CE1FB7323B00743387 /* PairVisual.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PairVisual.JPG; sourceTree = "<group>"; };
+		ACEE50D01FB7434100743387 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		ACF0B7731FB6F83900D24190 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		ACF0B7771FB6F85700D24190 /* PostURL.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostURL.storyboard; sourceTree = "<group>"; };
 		ACF0B7791FB6F87A00D24190 /* PostDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetail.storyboard; sourceTree = "<group>"; };
@@ -86,6 +101,7 @@
 		ACF0B7951FB6FCD900D24190 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
 		ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostPlaceCell.xib; sourceTree = "<group>"; };
 		ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		ACF0B79D1FB7080600D24190 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		FB34E28A7F1B5D95A559ABA3 /* Pods-StockWithPartnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWithPartnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE58F50BB7AF1A19E7BE335C /* Pods_StockWithPartnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockWithPartnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE695561C03FEBEB45EE45D8 /* Pods-StockWithPartnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWithPartnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +183,7 @@
 		AC4C5E591FB6EA57009A854C /* StockWithPartner */ = {
 			isa = PBXGroup;
 			children = (
+				ACEE50CB1FB72FD000743387 /* Images */,
 				ACF0B7701FB6F78600D24190 /* Models */,
 				ACF0B7721FB6F79500D24190 /* Controllers */,
 				ACF0B7711FB6F79000D24190 /* Views */,
@@ -197,9 +214,22 @@
 			path = StockWithPartnerUITests;
 			sourceTree = "<group>";
 		};
+		ACEE50CB1FB72FD000743387 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ACEE50CC1FB72FDA00743387 /* LoginVisual.JPG */,
+				ACEE50CE1FB7323B00743387 /* PairVisual.JPG */,
+				ACAED3B21FB75A9E00DBA4B8 /* PairComplete.JPG */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		ACF0B7701FB6F78600D24190 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACF0B79D1FB7080600D24190 /* Login.swift */,
+				ACEE50D01FB7434100743387 /* Pair.swift */,
+				AC57C5941FB76D410031BDF7 /* PairComplete.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +240,7 @@
 				ACF0B7971FB6FEAE00D24190 /* Cells */,
 				ACF0B7731FB6F83900D24190 /* Login.storyboard */,
 				ACF0B7931FB6FCC700D24190 /* Pair.storyboard */,
+				ACAED3B01FB7592C00DBA4B8 /* PairComplete.storyboard */,
 				AC4C5E5E1FB6EA57009A854C /* Main.storyboard */,
 				ACF0B7851FB6F96700D24190 /* Home.storyboard */,
 				ACF0B7771FB6F85700D24190 /* PostURL.storyboard */,
@@ -225,6 +256,7 @@
 				ACF0B79A1FB7002D00D24190 /* Cells */,
 				ACF0B7811FB6F93000D24190 /* LoginViewController.swift */,
 				ACF0B7951FB6FCD900D24190 /* PairViewController.swift */,
+				ACAED3B41FB75DB900DBA4B8 /* PairCompleteViewController.swift */,
 				ACF0B7891FB6FA8700D24190 /* MainTabBarController.swift */,
 				ACF0B7911FB6FAEA00D24190 /* HomeViewController.swift */,
 				ACF0B78B1FB6FAA500D24190 /* PostURLViewController.swift */,
@@ -369,13 +401,17 @@
 				AC4C5E651FB6EA57009A854C /* LaunchScreen.storyboard in Resources */,
 				ACF0B7861FB6F96700D24190 /* Home.storyboard in Resources */,
 				ACF0B7941FB6FCC700D24190 /* Pair.storyboard in Resources */,
+				ACAED3B11FB7592C00DBA4B8 /* PairComplete.storyboard in Resources */,
 				2EC548A71FB6F463003E3988 /* GoogleService-Info.plist in Resources */,
+				ACEE50CD1FB72FDA00743387 /* LoginVisual.JPG in Resources */,
 				AC4C5E621FB6EA57009A854C /* Assets.xcassets in Resources */,
+				ACEE50CF1FB7323B00743387 /* PairVisual.JPG in Resources */,
 				ACF0B7781FB6F85700D24190 /* PostURL.storyboard in Resources */,
 				ACF0B77A1FB6F87A00D24190 /* PostDetail.storyboard in Resources */,
 				ACF0B7991FB6FED900D24190 /* PostPlaceCell.xib in Resources */,
 				ACF0B7881FB6F9BE00D24190 /* Setting.storyboard in Resources */,
 				ACF0B7741FB6F83900D24190 /* Login.storyboard in Resources */,
+				ACAED3B31FB75A9E00DBA4B8 /* PairComplete.JPG in Resources */,
 				AC4C5E601FB6EA57009A854C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,9 +439,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -418,9 +469,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartnerTests/Pods-StockWithPartnerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -433,9 +499,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartner/Pods-StockWithPartner-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,9 +553,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,9 +571,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartnerTests/Pods-StockWithPartnerTests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,12 +608,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StockWithPartner/Pods-StockWithPartner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,9 +639,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF0B7821FB6F93000D24190 /* LoginViewController.swift in Sources */,
+				AC57C5951FB76D410031BDF7 /* PairComplete.swift in Sources */,
+				ACF0B79E1FB7080600D24190 /* Login.swift in Sources */,
+				ACAED3B51FB75DB900DBA4B8 /* PairCompleteViewController.swift in Sources */,
 				ACF0B78E1FB6FAB000D24190 /* PostDetailViewController.swift in Sources */,
 				AC4C5E5B1FB6EA57009A854C /* AppDelegate.swift in Sources */,
 				ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */,
+				ACEE50D11FB7434100743387 /* Pair.swift in Sources */,
 				ACF0B7921FB6FAEA00D24190 /* HomeViewController.swift in Sources */,
 				ACF0B78A1FB6FA8700D24190 /* MainTabBarController.swift in Sources */,
 				ACF0B7901FB6FAB800D24190 /* SettingViewController.swift in Sources */,
