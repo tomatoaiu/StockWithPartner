@@ -6,6 +6,8 @@ target 'StockWithPartner' do
   use_frameworks!
 
   # Pods for StockWithPartner
+  
+  pod 'Firebase/Core'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
