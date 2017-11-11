@@ -19,6 +19,8 @@ target 'StockWithPartner' do
   
   # font awesone
   pod 'FontAwesome.swift'
+  
+  pod 'ObjectMapper'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
@@ -36,6 +38,8 @@ target 'StockWithPartner' do
     
     # font awesone
     pod 'FontAwesome.swift'
+    
+    pod 'ObjectMapper'
   end
 
   target 'StockWithPartnerUITests' do
@@ -54,6 +58,8 @@ target 'StockWithPartner' do
     
     # font awesone
     pod 'FontAwesome.swift'
+    
+    pod 'ObjectMapper'
   end
 
 end

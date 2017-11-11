@@ -17,6 +17,7 @@
 		AC4C5E7B1FB6EA57009A854C /* StockWithPartnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C5E7A1FB6EA57009A854C /* StockWithPartnerUITests.swift */; };
 		AC57C5951FB76D410031BDF7 /* PairComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57C5941FB76D410031BDF7 /* PairComplete.swift */; };
 		AC57C5971FB785850031BDF7 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57C5961FB785850031BDF7 /* HomeNavigationController.swift */; };
+		AC57C5991FB798EC0031BDF7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57C5981FB798EC0031BDF7 /* Post.swift */; };
 		ACAED3B11FB7592C00DBA4B8 /* PairComplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAED3B01FB7592C00DBA4B8 /* PairComplete.storyboard */; };
 		ACAED3B31FB75A9E00DBA4B8 /* PairComplete.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAED3B21FB75A9E00DBA4B8 /* PairComplete.JPG */; };
 		ACAED3B51FB75DB900DBA4B8 /* PairCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAED3B41FB75DB900DBA4B8 /* PairCompleteViewController.swift */; };
@@ -82,6 +83,7 @@
 		AC4C5E7C1FB6EA57009A854C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC57C5941FB76D410031BDF7 /* PairComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairComplete.swift; sourceTree = "<group>"; };
 		AC57C5961FB785850031BDF7 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		AC57C5981FB798EC0031BDF7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ACAED3B01FB7592C00DBA4B8 /* PairComplete.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairComplete.storyboard; sourceTree = "<group>"; };
 		ACAED3B21FB75A9E00DBA4B8 /* PairComplete.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PairComplete.JPG; sourceTree = "<group>"; };
 		ACAED3B41FB75DB900DBA4B8 /* PairCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairCompleteViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				ACF0B79D1FB7080600D24190 /* Login.swift */,
 				ACEE50D01FB7434100743387 /* Pair.swift */,
 				AC57C5941FB76D410031BDF7 /* PairComplete.swift */,
+				AC57C5981FB798EC0031BDF7 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -458,6 +462,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -479,6 +484,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -490,6 +496,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -619,6 +626,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -630,6 +638,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -656,6 +665,7 @@
 				ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */,
 				ACEE50D11FB7434100743387 /* Pair.swift in Sources */,
 				ACF0B7921FB6FAEA00D24190 /* HomeViewController.swift in Sources */,
+				AC57C5991FB798EC0031BDF7 /* Post.swift in Sources */,
 				ACF0B78A1FB6FA8700D24190 /* MainTabBarController.swift in Sources */,
 				AC57C5971FB785850031BDF7 /* HomeNavigationController.swift in Sources */,
 				ACF0B7901FB6FAB800D24190 /* SettingViewController.swift in Sources */,
