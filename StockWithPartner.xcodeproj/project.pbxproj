@@ -28,6 +28,8 @@
 		ACF0B7921FB6FAEA00D24190 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B7911FB6FAEA00D24190 /* HomeViewController.swift */; };
 		ACF0B7941FB6FCC700D24190 /* Pair.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7931FB6FCC700D24190 /* Pair.storyboard */; };
 		ACF0B7961FB6FCD900D24190 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B7951FB6FCD900D24190 /* PairViewController.swift */; };
+		ACF0B7991FB6FED900D24190 /* PostPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */; };
+		ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */; };
 		B627EA5288E564A6E4FB9CF0 /* Pods_StockWithPartnerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B751BAA8797DE93E7879603 /* Pods_StockWithPartnerUITests.framework */; };
 		BBA43F66F580D7CC65F92092 /* Pods_StockWithPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767B3EFAFBB958E0A16EE3D8 /* Pods_StockWithPartner.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +84,8 @@
 		ACF0B7911FB6FAEA00D24190 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ACF0B7931FB6FCC700D24190 /* Pair.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pair.storyboard; sourceTree = "<group>"; };
 		ACF0B7951FB6FCD900D24190 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
+		ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostPlaceCell.xib; sourceTree = "<group>"; };
+		ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		FB34E28A7F1B5D95A559ABA3 /* Pods-StockWithPartnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWithPartnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE58F50BB7AF1A19E7BE335C /* Pods_StockWithPartnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockWithPartnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE695561C03FEBEB45EE45D8 /* Pods-StockWithPartnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWithPartnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockWithPartnerUITests/Pods-StockWithPartnerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 		ACF0B7711FB6F79000D24190 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ACF0B7971FB6FEAE00D24190 /* Cells */,
 				ACF0B7731FB6F83900D24190 /* Login.storyboard */,
 				ACF0B7931FB6FCC700D24190 /* Pair.storyboard */,
 				AC4C5E5E1FB6EA57009A854C /* Main.storyboard */,
@@ -217,6 +222,7 @@
 		ACF0B7721FB6F79500D24190 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACF0B79A1FB7002D00D24190 /* Cells */,
 				ACF0B7811FB6F93000D24190 /* LoginViewController.swift */,
 				ACF0B7951FB6FCD900D24190 /* PairViewController.swift */,
 				ACF0B7891FB6FA8700D24190 /* MainTabBarController.swift */,
@@ -226,6 +232,22 @@
 				ACF0B78F1FB6FAB800D24190 /* SettingViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACF0B7971FB6FEAE00D24190 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ACF0B7981FB6FED900D24190 /* PostPlaceCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ACF0B79A1FB7002D00D24190 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ACF0B79B1FB7004200D24190 /* PostPlaceTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +373,7 @@
 				AC4C5E621FB6EA57009A854C /* Assets.xcassets in Resources */,
 				ACF0B7781FB6F85700D24190 /* PostURL.storyboard in Resources */,
 				ACF0B77A1FB6F87A00D24190 /* PostDetail.storyboard in Resources */,
+				ACF0B7991FB6FED900D24190 /* PostPlaceCell.xib in Resources */,
 				ACF0B7881FB6F9BE00D24190 /* Setting.storyboard in Resources */,
 				ACF0B7741FB6F83900D24190 /* Login.storyboard in Resources */,
 				AC4C5E601FB6EA57009A854C /* Main.storyboard in Resources */,
@@ -533,6 +556,7 @@
 				ACF0B7821FB6F93000D24190 /* LoginViewController.swift in Sources */,
 				ACF0B78E1FB6FAB000D24190 /* PostDetailViewController.swift in Sources */,
 				AC4C5E5B1FB6EA57009A854C /* AppDelegate.swift in Sources */,
+				ACF0B79C1FB7004200D24190 /* PostPlaceTableViewCell.swift in Sources */,
 				ACF0B7921FB6FAEA00D24190 /* HomeViewController.swift in Sources */,
 				ACF0B78A1FB6FA8700D24190 /* MainTabBarController.swift in Sources */,
 				ACF0B7901FB6FAB800D24190 /* SettingViewController.swift in Sources */,
