@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Pair View Controller-->
         <scene sceneID="VwD-PH-jiY">
@@ -37,11 +32,11 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uB3-rd-era">
-                                <rect key="frame" x="30" y="299" width="315" height="68"/>
+                                <rect key="frame" x="30" y="299" width="315" height="69"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.46000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="57"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="57"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell this code to your partner or Input your partner's code below" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xFO-M0-0ml">
