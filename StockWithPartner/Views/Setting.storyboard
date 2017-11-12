@@ -17,13 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="e6r-mK-444">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQI-W5-S3J">
+                                <rect key="frame" x="142.5" y="310" width="89" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedLogoutButton:" destination="8Sy-Np-Cfi" eventType="touchUpInside" id="kX2-Zl-bFV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gQI-W5-S3J" firstAttribute="centerY" secondItem="e6r-mK-444" secondAttribute="centerY" id="DOr-tx-GS9"/>
+                            <constraint firstItem="gQI-W5-S3J" firstAttribute="centerX" secondItem="e6r-mK-444" secondAttribute="centerX" id="oYi-0D-95e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LRj-pi-3wu"/>
                     </view>
+                    <connections>
+                        <segue destination="Srd-I4-wvp" kind="presentation" identifier="toLogin" id="OXd-B4-gr8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Spy-jF-6Yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46" y="103"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="tBS-2X-r0E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="Srd-I4-wvp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyA-Pl-FR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="40"/>
         </scene>
     </scenes>
 </document>

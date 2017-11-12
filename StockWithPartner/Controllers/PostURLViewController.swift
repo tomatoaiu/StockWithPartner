@@ -83,7 +83,7 @@ class PostURLViewController: UIViewController, UITextFieldDelegate {
         postUrlTextField.delegate = self
         postUrlTextField.layer.borderWidth = 1
         postUrlTextField.layer.borderColor = UIColor.white.cgColor
-        postUrlTextField.becomeFirstResponder()
+//        postUrlTextField.becomeFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {
