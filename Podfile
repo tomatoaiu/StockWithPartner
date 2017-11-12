@@ -20,6 +20,12 @@ target 'StockWithPartner' do
   # font awesone
   pod 'FontAwesome.swift'
   
+  pod 'ObjectMapper'
+  
+  # API
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+
   # ogp
   pod 'OpenGraph'
 
@@ -39,9 +45,15 @@ target 'StockWithPartner' do
     
     # font awesone
     pod 'FontAwesome.swift'
+    
+    pod 'ObjectMapper'
+    
+    # API
+    pod 'Alamofire'
+    pod 'AlamofireImage'
 	
-	# ogp
-	pod 'OpenGraph'
+	  # ogp
+	  pod 'OpenGraph'
   end
 
   target 'StockWithPartnerUITests' do
@@ -60,9 +72,14 @@ target 'StockWithPartner' do
     
     # font awesone
     pod 'FontAwesome.swift'
+    
+    pod 'ObjectMapper'
+    
+    # API
+    pod 'Alamofire'
+    pod 'AlamofireImage'
 	
-	# ogp
-	pod 'OpenGraph'
+	  # ogp
+	  pod 'OpenGraph'
   end
-
 end
