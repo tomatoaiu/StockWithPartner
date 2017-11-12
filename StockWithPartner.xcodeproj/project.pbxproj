@@ -366,6 +366,14 @@
 					AC4C5E561FB6EA57009A854C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					AC4C5E6A1FB6EA57009A854C = {
 						CreatedOnToolsVersion = 9.1;
