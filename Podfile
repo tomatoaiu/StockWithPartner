@@ -19,6 +19,9 @@ target 'StockWithPartner' do
   
   # font awesone
   pod 'FontAwesome.swift'
+  
+  # ogp
+  pod 'OpenGraph'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
@@ -36,6 +39,9 @@ target 'StockWithPartner' do
     
     # font awesone
     pod 'FontAwesome.swift'
+	
+	# ogp
+	pod 'OpenGraph'
   end
 
   target 'StockWithPartnerUITests' do
@@ -54,6 +60,9 @@ target 'StockWithPartner' do
     
     # font awesone
     pod 'FontAwesome.swift'
+	
+	# ogp
+	pod 'OpenGraph'
   end
 
 end

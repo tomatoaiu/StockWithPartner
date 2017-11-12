@@ -24,6 +24,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaQ-M0-30F">
+                                <rect key="frame" x="57" y="177" width="260" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Urlを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLj-dJ-bIh">
+                                <rect key="frame" x="57" y="140" width="179" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Y8-IK8">
+                                <rect key="frame" x="106" y="234" width="163" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78263970803512306" green="0.77520135219601993" blue="0.81938147668393779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="postUrlButton:" destination="hJn-rK-1XJ" eventType="touchUpInside" id="l7L-j4-Gdt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -32,10 +55,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WAY-Pf-W3w"/>
                     </view>
+                    <connections>
+                        <outlet property="postUrlLabel" destination="lLj-dJ-bIh" id="s6U-tN-aH9"/>
+                        <outlet property="postUrlTextField" destination="QaQ-M0-30F" id="904-MK-enh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s87-QA-Ht0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="129"/>
+            <point key="canvasLocation" x="-82.400000000000006" y="128.18590704647679"/>
         </scene>
     </scenes>
 </document>
