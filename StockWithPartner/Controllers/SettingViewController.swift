@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingViewController: UIViewController {
 
+    @IBAction func tappedLogoutButton(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+        self.performSegue(withIdentifier: "toLogin", sender: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
