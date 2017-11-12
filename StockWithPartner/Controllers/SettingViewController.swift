@@ -13,7 +13,9 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.tabBarController?.tabBar.layer.borderWidth = 0.50
+        self.tabBarController?.tabBar.layer.borderColor = UIColor.clear.cgColor
+        self.tabBarController?.tabBar.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

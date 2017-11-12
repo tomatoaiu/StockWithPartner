@@ -46,7 +46,7 @@ class PostPlaceTableViewCell: UITableViewCell {
                 self.postImageView.af_setImage(withURL: url, placeholderImage: placeHolderImage, imageTransition: UIImageView.ImageTransition.curlUp(2))
             }
         } else {
-            // ...
+            
         }
     }
 }
