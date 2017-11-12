@@ -9,16 +9,16 @@
 import UIKit
 import OpenGraph
 import Firebase
+import SVProgressHUD
 
-class PostURLViewController: UIViewController {
+class PostURLViewController: UIViewController, UITextFieldDelegate {
 
-	@IBOutlet weak var postUrlLabel: UILabel!
+	@IBOutlet weak var postUrlLabel: UITextView!
 	@IBOutlet weak var postUrlTextField: UITextField!
-	@IBAction func postUrlButton(_ sender: Any) {
-//		let url = postUrlTextField.text!
-//		print(url)
-		
-		let url = "https://github.com/satoshi-takano/OpenGraph"
+	@IBOutlet weak var postUrlButton: UIButton!
+	@IBAction func postUrlTapped(_ sender: Any) {
+		let url = postUrlTextField.text!
+//		let url = "https://github.com/satoshi-takano/OpenGraph"
 		
 		guard let me = Auth.auth().currentUser else {
 			return
@@ -32,8 +32,6 @@ class PostURLViewController: UIViewController {
 			print(og?[.description])   // => og:url of the web site
 			
 			let ref = Database.database().reference()
-			
-			
 			ref.child("users").child(me.uid).child("partner_uid").observeSingleEvent(of: .value, with: { (snapshot) in
 				let partner_uid = snapshot.value
 				
@@ -57,18 +55,33 @@ class PostURLViewController: UIViewController {
 			})
 
 		}
-		
+		SVProgressHUD.showSuccess(withStatus: "追加完了しました。")
+		postUrlTextField.text = ""
+		postUrlTextField.endEditing(true)
+		self.tabBarController?.selectedIndex = 0
 	}
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+		
+		postUrlButton.layer.borderWidth = 2
+		postUrlButton.layer.borderColor = UIColor.white.cgColor
+		
+		postUrlTextField.delegate = self
+		postUrlTextField.layer.borderWidth = 2
+		postUrlTextField.layer.borderColor = UIColor.white.cgColor
+		postUrlTextField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		self.view.endEditing(true)
+	}
     
 
     /*

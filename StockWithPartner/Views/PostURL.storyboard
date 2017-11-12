@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,46 +19,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PostURL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-8Z-2nm">
-                                <rect key="frame" x="154.5" y="323" width="66.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaQ-M0-30F">
-                                <rect key="frame" x="57" y="177" width="260" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Urlを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLj-dJ-bIh">
-                                <rect key="frame" x="57" y="140" width="179" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Y8-IK8">
-                                <rect key="frame" x="106" y="234" width="163" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.78263970803512306" green="0.77520135219601993" blue="0.81938147668393779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="追加"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Y8-IK8">
+                                <rect key="frame" x="84" y="261" width="206" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="追加">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="postUrlButton:" destination="hJn-rK-1XJ" eventType="touchUpInside" id="l7L-j4-Gdt"/>
+                                    <action selector="postUrlTapped:" destination="hJn-rK-1XJ" eventType="touchUpInside" id="cG9-UE-ctU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-hF-1Vk">
+                                <rect key="frame" x="30" y="186" width="314" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="L2x-AM-Nrc"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Please Input url" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-Yq-izI">
+                                <rect key="frame" x="30" y="137" width="220" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hSp-8Z-2nm" firstAttribute="centerY" secondItem="Etf-vL-u02" secondAttribute="centerY" id="22j-ig-BPd"/>
-                            <constraint firstItem="hSp-8Z-2nm" firstAttribute="centerX" secondItem="Etf-vL-u02" secondAttribute="centerX" id="So4-4g-rRr"/>
+                            <constraint firstItem="OP5-hF-1Vk" firstAttribute="leading" secondItem="Etf-vL-u02" secondAttribute="leadingMargin" constant="14" id="52B-md-DYZ"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="leading" secondItem="Etf-vL-u02" secondAttribute="leadingMargin" constant="68" id="6tZ-GF-QQE"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="top" secondItem="OP5-hF-1Vk" secondAttribute="bottom" constant="33" id="KCw-SZ-Qm1"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="dk9-Y8-IK8" secondAttribute="trailing" constant="85" id="KXd-j0-cIu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OP5-hF-1Vk" secondAttribute="bottom" constant="439" id="LiB-n1-0Ky"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="OP5-hF-1Vk" secondAttribute="trailing" constant="31" id="caG-3A-g7G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WAY-Pf-W3w"/>
                     </view>
                     <connections>
-                        <outlet property="postUrlLabel" destination="lLj-dJ-bIh" id="s6U-tN-aH9"/>
-                        <outlet property="postUrlTextField" destination="QaQ-M0-30F" id="904-MK-enh"/>
+                        <outlet property="postUrlButton" destination="dk9-Y8-IK8" id="7lx-6d-EV1"/>
+                        <outlet property="postUrlLabel" destination="4Uh-Yq-izI" id="7Xx-dB-asp"/>
+                        <outlet property="postUrlTextField" destination="OP5-hF-1Vk" id="Lag-aO-AhF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s87-QA-Ht0" userLabel="First Responder" sceneMemberID="firstResponder"/>
