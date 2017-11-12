@@ -17,42 +17,13 @@
                     <view key="view" contentMode="scaleToFill" id="e6r-mK-444">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w4-R9-op5">
-                                <rect key="frame" x="160" y="323" width="55" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcn-aZ-DZT">
-                                <rect key="frame" x="151.5" y="374" width="73" height="30"/>
-                                <state key="normal" title="Login view"/>
-                                <connections>
-                                    <segue destination="KV8-VB-i69" kind="show" id="NfQ-aP-UEa"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hcn-aZ-DZT" firstAttribute="centerX" secondItem="e6r-mK-444" secondAttribute="centerX" id="14u-WU-N4b"/>
-                            <constraint firstItem="2w4-R9-op5" firstAttribute="centerY" secondItem="e6r-mK-444" secondAttribute="centerY" id="3y5-GO-ggC"/>
-                            <constraint firstItem="hcn-aZ-DZT" firstAttribute="top" secondItem="2w4-R9-op5" secondAttribute="bottom" constant="30" id="tW3-pA-kAE"/>
-                            <constraint firstItem="2w4-R9-op5" firstAttribute="centerX" secondItem="e6r-mK-444" secondAttribute="centerX" id="v8d-nr-b0P"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="LRj-pi-3wu"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Spy-jF-6Yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46" y="103"/>
-        </scene>
-        <!--Login-->
-        <scene sceneID="ZgY-wC-caK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" id="KV8-VB-i69" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDc-6k-c9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="756" y="135"/>
         </scene>
     </scenes>
 </document>

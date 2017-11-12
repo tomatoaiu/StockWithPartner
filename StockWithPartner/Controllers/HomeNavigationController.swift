@@ -14,7 +14,6 @@ class HomeNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tabBarItem.image = UIImage.fontAwesomeIcon(name: .home, textColor: UIColor.white, size: CGSize(width: 30, height: 30))
         self.tabBarController?.tabBar.layer.borderWidth = 0.50
         self.tabBarController?.tabBar.layer.borderColor = UIColor.clear.cgColor
         self.tabBarController?.tabBar.clipsToBounds = true
