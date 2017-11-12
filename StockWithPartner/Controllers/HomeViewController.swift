@@ -9,14 +9,18 @@
 import UIKit
 import FontAwesome_swift
 import ObjectMapper
+import SVProgressHUD
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl:UIRefreshControl!
     var postList: [Post?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SVProgressHUD.show()
         
         let postPlace: UINib = UINib(nibName: "PostPlaceCell", bundle: nil)
         tableView.register(postPlace, forCellReuseIdentifier: "postPlace")
@@ -25,15 +29,34 @@ class HomeViewController: UIViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.backgroundColor = UIColor.clear
         
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Update")
+        self.refreshControl.addTarget(self, action: #selector(HomeViewController.refresh), for: UIControlEvents.valueChanged)
+        self.tableView.addSubview(refreshControl)
+        
+        self.tableView.refreshControl = self.refreshControl
+        
+        fetch()
+    }
+    
+    @objc func refresh() {
+        self.postList.removeAll()
+        fetch()
+    }
+    
+    func fetch() {
         Post.index { (posts) in
             
             posts.forEach({ (post_object) in
                 if let post_object = post_object {
                     let post: Post? = Mapper<Post>().map(JSON: post_object)
                     self.postList.append(post)
-                    self.tableView.reloadData()
                 }
             })
+            
+            self.tableView.reloadData()
+            SVProgressHUD.dismiss()
+            self.refreshControl.endRefreshing()
         }
     }
 
@@ -49,6 +72,12 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postPlace", for: indexPath) as! PostPlaceTableViewCell
         
         cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
+        
+        print(indexPath.row)
+        print(self.postList.count)
+        if indexPath.row > self.postList.count {
+            return UITableViewCell()
+        }
         
         guard let post = self.postList[indexPath.row] else {
             return UITableViewCell()
