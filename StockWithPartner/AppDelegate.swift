@@ -7,16 +7,36 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+import SVProgressHUD
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+		FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        
+        // ログインしていない場合サインイン画面に遷移
+        if (Auth.auth().currentUser == nil){
+            //windowを生成
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            //Storyboardを指定
+            let LoginViewContrller = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController()
+            //rootViewControllerに入れる
+            self.window?.rootViewController = LoginViewContrller
+            //表示
+            self.window?.makeKeyAndVisible()
+        }
+        
+      return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -40,7 +60,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
+        -> Bool {
+            return GIDSignIn.sharedInstance().handle(url,
+                                                     sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                     annotation: [:])
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: sourceApplication,
+                                                 annotation: annotation)
+    }
 
-
+    // signIn buttonが押されたときの処理
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        SVProgressHUD.show()
+        
+        guard let controller = GIDSignIn.sharedInstance().uiDelegate as? LoginViewController else { return }
+        
+        if let _ = error {
+            // LoginViewController の showMessagePrompt関数にerror messageを渡す
+            // controller.showMessagePrompt(error.localizedDescription)
+            SVProgressHUD.showError(withStatus: "Error")
+            return
+        }
+        
+        guard let authentication = user.authentication else {
+            SVProgressHUD.showError(withStatus: "Error")
+            return
+        }
+        
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
+        controller.firebaseLogin(credential)
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        
+    }
 }
-

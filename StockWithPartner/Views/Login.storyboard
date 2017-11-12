@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIH-aX-nTh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="RDr-se-wID">
+            <objects>
+                <viewController storyboardIdentifier="Login" title="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PIH-aX-nTh" customClass="LoginViewController" customModule="StockWithPartner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0aK-qA-1gf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginVisual.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="OZT-pv-XOY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b0-QX-wOZ" customClass="GIDSignInButton">
+                                <rect key="frame" x="50" y="547" width="275" height="70"/>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.52549019607843139" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="s4y-dn-Fod"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock with Partner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAf-be-Byf">
+                                <rect key="frame" x="22" y="308" width="332" height="51.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OZT-pv-XOY" secondAttribute="trailing" id="Duy-bW-iGx"/>
+                            <constraint firstItem="OZT-pv-XOY" firstAttribute="leading" secondItem="0aK-qA-1gf" secondAttribute="leading" id="FhL-Y2-x8K"/>
+                            <constraint firstItem="OZT-pv-XOY" firstAttribute="top" secondItem="0aK-qA-1gf" secondAttribute="top" id="MFv-r5-F3x"/>
+                            <constraint firstAttribute="bottom" secondItem="OZT-pv-XOY" secondAttribute="bottom" id="Y59-KN-ALa"/>
+                            <constraint firstItem="Kg3-V0-MdH" firstAttribute="bottom" secondItem="9b0-QX-wOZ" secondAttribute="bottom" constant="50" id="Yx5-x9-fV4"/>
+                            <constraint firstItem="TAf-be-Byf" firstAttribute="centerY" secondItem="0aK-qA-1gf" secondAttribute="centerY" id="cq3-Un-c9k"/>
+                            <constraint firstItem="9b0-QX-wOZ" firstAttribute="leading" secondItem="Kg3-V0-MdH" secondAttribute="leading" constant="50" id="kMD-Af-HLf"/>
+                            <constraint firstItem="TAf-be-Byf" firstAttribute="centerX" secondItem="0aK-qA-1gf" secondAttribute="centerX" id="tkI-V3-hfw"/>
+                            <constraint firstItem="Kg3-V0-MdH" firstAttribute="trailing" secondItem="9b0-QX-wOZ" secondAttribute="trailing" constant="50" id="wQZ-Pz-9Qe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kg3-V0-MdH"/>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="9b0-QX-wOZ" id="rdu-bl-5GE"/>
+                        <segue destination="gLq-8j-beU" kind="presentation" identifier="toPair" id="iv9-Vq-gOK"/>
+                        <segue destination="Ihg-27-Kln" kind="presentation" identifier="toMain" id="KDS-ni-h3X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpN-Q9-Dg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="98.50074962518741"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="a64-s8-uhH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Ihg-27-Kln" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjp-dV-iUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="30"/>
+        </scene>
+        <!--Pair-->
+        <scene sceneID="tWq-wu-cU7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pair" id="gLq-8j-beU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82k-PB-Hw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginVisual.JPG" width="5184" height="3456"/>
+    </resources>
+</document>

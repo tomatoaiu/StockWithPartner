@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hJn-rK-1XJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post-->
+        <scene sceneID="laa-ID-fqO">
+            <objects>
+                <viewController title="Post" id="hJn-rK-1XJ" customClass="PostURLViewController" customModule="StockWithPartner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Etf-vL-u02">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-hF-1Vk">
+                                <rect key="frame" x="16" y="170" width="343" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Iz-Xg-dAS"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please Input url" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-Yq-izI">
+                                <rect key="frame" x="16" y="80" width="343" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G70-Rf-BsU"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Y8-IK8">
+                                <rect key="frame" x="60" y="260" width="255" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <state key="normal" title="追加">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="postUrlTapped:" destination="hJn-rK-1XJ" eventType="touchUpInside" id="cG9-UE-ctU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OP5-hF-1Vk" firstAttribute="leading" secondItem="WAY-Pf-W3w" secondAttribute="leading" constant="16" id="48T-1O-HEm"/>
+                            <constraint firstItem="4Uh-Yq-izI" firstAttribute="top" secondItem="WAY-Pf-W3w" secondAttribute="top" constant="60" id="4XC-H5-eRb"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="leading" secondItem="WAY-Pf-W3w" secondAttribute="leading" constant="60" id="Ipp-cA-zSd"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="OP5-hF-1Vk" secondAttribute="trailing" constant="16" id="NlF-ER-nbb"/>
+                            <constraint firstItem="OP5-hF-1Vk" firstAttribute="top" secondItem="4Uh-Yq-izI" secondAttribute="bottom" constant="50" id="U3B-4z-HT6"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="4Uh-Yq-izI" secondAttribute="trailing" constant="16" id="Wuo-qs-Nm7"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="top" secondItem="OP5-hF-1Vk" secondAttribute="bottom" constant="50" id="eGu-dh-Zkv"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="centerX" secondItem="Etf-vL-u02" secondAttribute="centerX" id="sAM-k8-1fa"/>
+                            <constraint firstItem="4Uh-Yq-izI" firstAttribute="leading" secondItem="WAY-Pf-W3w" secondAttribute="leading" constant="16" id="tAt-dP-36H"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="dk9-Y8-IK8" secondAttribute="trailing" constant="60" id="yJB-5M-ZNd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WAY-Pf-W3w"/>
+                    </view>
+                    <connections>
+                        <outlet property="postUrlButton" destination="dk9-Y8-IK8" id="7lx-6d-EV1"/>
+                        <outlet property="postUrlLabel" destination="4Uh-Yq-izI" id="7Xx-dB-asp"/>
+                        <outlet property="postUrlTextField" destination="OP5-hF-1Vk" id="Lag-aO-AhF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s87-QA-Ht0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+</document>
