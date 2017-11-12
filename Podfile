@@ -26,6 +26,9 @@ target 'StockWithPartner' do
   pod 'Alamofire'
   pod 'AlamofireImage'
 
+  # ogp
+  pod 'OpenGraph'
+
   target 'StockWithPartnerTests' do
     inherit! :search_paths
     # Pods for testing
@@ -48,6 +51,9 @@ target 'StockWithPartner' do
     # API
     pod 'Alamofire'
     pod 'AlamofireImage'
+	
+	  # ogp
+	  pod 'OpenGraph'
   end
 
   target 'StockWithPartnerUITests' do
@@ -72,6 +78,8 @@ target 'StockWithPartner' do
     # API
     pod 'Alamofire'
     pod 'AlamofireImage'
+	
+	  # ogp
+	  pod 'OpenGraph'
   end
-
 end
