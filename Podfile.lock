@@ -72,6 +72,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - OpenGraph (1.0.3)
   - Protobuf (3.4.0)
   - SVProgressHUD (2.2.2)
 
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FontAwesome.swift
   - GoogleSignIn
+  - OpenGraph
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -99,11 +101,12 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: be83fd28d63ae3087e7d351b1f39c1a7e24ab6e7
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
-  leveldb-library: 44ef425bfde64f5b41daef86b38db2d13edbbee1
+  leveldb-library: 9e29a1d913f922444127a7d0f28b025a0e2ba053
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  OpenGraph: 28ae247b6c834e3cce77c6cdd09face7511d4f04
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: e75dc60e3b5216c02f9f91949db9c8d0ebe3953b
+PODFILE CHECKSUM: 5c3a5aa5fa5faffff63e22981ff0c6c74b979564
 
 COCOAPODS: 1.3.1
