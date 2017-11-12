@@ -60,6 +60,16 @@ class HomeViewController: UIViewController {
             self.refreshControl.endRefreshing()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let post = sender as? Post else {
+            return
+        }
+        
+        if let next = segue.destination as? PostDetailViewController {
+            next.post = post
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -95,6 +105,10 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let post = self.postList[indexPath.row] else {
+            return
+        }
+        self.performSegue(withIdentifier: "toPostDetail", sender: post)
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
