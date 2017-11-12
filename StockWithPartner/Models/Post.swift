@@ -16,7 +16,7 @@ class Post : Mappable{
     var url: String?
     var title: String?
     var description: String?
-    var image_url: UIImage?
+    var image_url: URL?
     
     required init?(map: Map) {
         
@@ -25,9 +25,9 @@ class Post : Mappable{
     func mapping(map: Map) {
         id <- map["id"]
         url <- map["url"]
-        title <- map["titlte"]
+        title <- map["title"]
         description <- map["description"]
-        image_url <- map["image_url"]
+        image_url <- (map["image-url"], using: URLTransform())
     }
     
     static func index(callback: @escaping ([[String: Any]?]) -> Void) {

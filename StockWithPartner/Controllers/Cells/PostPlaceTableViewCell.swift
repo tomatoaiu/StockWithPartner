@@ -20,6 +20,7 @@ class PostPlaceTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
         // Initialization code
         self.titleLabel.text = "No Title"
         self.descriptionTextView.text = "No description"
@@ -34,19 +35,17 @@ class PostPlaceTableViewCell: UITableViewCell {
     }
     
     func setValues(post: Post) {
+        
         self.titleLabel.text = post.title ?? "No Title"
         self.descriptionTextView.text = post.description ?? "No description"
         self.urlLabel.text = post.url
         
-        if let post_url = post.url {
-            let url = URL(string: post_url)
-            
-            if let url = url {
-                let placeHolderImage = UIImage.fontAwesomeIcon(name: .image, textColor: UIColor.white.withAlphaComponent(0.3), size: CGSize(width: postImageView.bounds.width, height: postImageView.bounds.height), backgroundColor: UIColor.clear, borderWidth: 0, borderColor: UIColor.clear)
-                self.postImageView.af_setImage(withURL: url, placeholderImage: placeHolderImage, imageTransition: UIImageView.ImageTransition.curlUp(2))
-            }
+        let placeHolderImage = UIImage.fontAwesomeIcon(name: .image, textColor: UIColor.white.withAlphaComponent(0.3), size: CGSize(width: postImageView.bounds.width, height: postImageView.bounds.height), backgroundColor: UIColor.clear, borderWidth: 0, borderColor: UIColor.clear)
+        
+        if let url = post.image_url {
+            self.postImageView.af_setImage(withURL: url, placeholderImage: placeHolderImage)
         } else {
-            
+             self.postImageView.image = placeHolderImage
         }
     }
 }

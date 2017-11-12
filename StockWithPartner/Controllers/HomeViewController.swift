@@ -49,6 +49,7 @@ class HomeViewController: UIViewController {
             
             posts.forEach({ (post_object) in
                 if let post_object = post_object {
+                    print(post_object)
                     let post: Post? = Mapper<Post>().map(JSON: post_object)
                     self.postList.append(post)
                 }

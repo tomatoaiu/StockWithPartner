@@ -26,7 +26,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パンプルムゥス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJx-eb-vVr">
-                    <rect key="frame" x="16" y="50" width="143" height="24"/>
+                    <rect key="frame" x="16" y="50" width="235" height="24"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,6 +78,7 @@
                 <constraint firstItem="Ptu-Vo-oPy" firstAttribute="leading" secondItem="P77-F5-K2V" secondAttribute="trailing" constant="16" id="cpn-pp-66e"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dec-rB-xl2" secondAttribute="bottom" constant="16" id="g7X-LZ-K8c"/>
                 <constraint firstItem="Dec-rB-xl2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="i7R-Y3-ZwH"/>
+                <constraint firstItem="Ptu-Vo-oPy" firstAttribute="leading" secondItem="zJx-eb-vVr" secondAttribute="trailing" constant="8" id="jHZ-6h-Q4p"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ptu-Vo-oPy" secondAttribute="trailing" constant="16" id="vFz-nj-D3x"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
