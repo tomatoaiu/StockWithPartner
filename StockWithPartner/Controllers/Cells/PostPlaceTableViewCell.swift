@@ -10,6 +10,10 @@ import UIKit
 
 class PostPlaceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var urlLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +24,9 @@ class PostPlaceTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setValues(title: String) {
-
+    func setValues(post: Post) {
+        self.titleLabel.text = post.title
+        self.descriptionTextView.text = post.description
+        self.urlLabel.text = post.url
     }
 }

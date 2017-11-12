@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
                 if let post_object = post_object {
                     let post: Post? = Mapper<Post>().map(JSON: post_object)
                     self.postList.append(post)
+                    self.tableView.reloadData()
                 }
             })
         }
@@ -49,11 +50,17 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
         
         cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         
+        guard let post = self.postList[indexPath.row] else {
+            return UITableViewCell()
+        }
+        
+        cell.setValues(post: post)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return self.postList.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

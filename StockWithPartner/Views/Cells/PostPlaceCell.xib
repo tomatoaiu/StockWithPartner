@@ -82,7 +82,13 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-9.5" y="-5.5"/>
+            <connections>
+                <outlet property="descriptionTextView" destination="P77-F5-K2V" id="NWw-6Z-Fh2"/>
+                <outlet property="postImageView" destination="Ptu-Vo-oPy" id="xPU-4K-Z77"/>
+                <outlet property="titleLabel" destination="zJx-eb-vVr" id="job-7C-bEc"/>
+                <outlet property="urlLabel" destination="Dec-rB-xl2" id="JYr-Zr-9Wb"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="-3"/>
         </view>
     </objects>
 </document>

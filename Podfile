@@ -21,6 +21,10 @@ target 'StockWithPartner' do
   pod 'FontAwesome.swift'
   
   pod 'ObjectMapper'
+  
+  # API
+  pod 'Alamofire'
+  pod 'AlamofireImage'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
@@ -40,6 +44,10 @@ target 'StockWithPartner' do
     pod 'FontAwesome.swift'
     
     pod 'ObjectMapper'
+    
+    # API
+    pod 'Alamofire'
+    pod 'AlamofireImage'
   end
 
   target 'StockWithPartnerUITests' do
@@ -60,6 +68,10 @@ target 'StockWithPartner' do
     pod 'FontAwesome.swift'
     
     pod 'ObjectMapper'
+    
+    # API
+    pod 'Alamofire'
+    pod 'AlamofireImage'
   end
 
 end
