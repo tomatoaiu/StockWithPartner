@@ -13,15 +13,17 @@
         <scene sceneID="50Y-QG-y9I">
             <objects>
                 <tabBarController id="f3D-eI-iS4" customClass="MainTabBarController" customModule="StockWithPartner" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8sx-Gw-HV6">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="8sx-Gw-HV6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="2cT-7D-GXR" kind="relationship" relationship="viewControllers" id="yGw-bX-tyR"/>
                         <segue destination="MOH-hA-bsB" kind="relationship" relationship="viewControllers" id="Iiv-1A-OIp"/>
                         <segue destination="1YK-dU-eRK" kind="relationship" relationship="viewControllers" id="KGk-Le-WBJ"/>
+                        <segue destination="E0h-T2-BT9" kind="presentation" identifier="toPair" id="fdh-iL-XDg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cz-Gs-4nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,6 +49,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="848-P7-oOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-435" y="162"/>
+        </scene>
+        <!--Pair-->
+        <scene sceneID="mjk-e6-lgT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pair" id="E0h-T2-BT9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQV-Du-uYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1340" y="341"/>
         </scene>
         <!--Home-->
         <scene sceneID="88J-KP-Tyb">

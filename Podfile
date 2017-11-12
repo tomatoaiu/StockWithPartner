@@ -8,15 +8,52 @@ target 'StockWithPartner' do
   # Pods for StockWithPartner
   
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
+  pod 'GoogleSignIn'
+  
+  # プログレスバー
+  pod 'SVProgressHUD'
+  
+  # font awesone
+  pod 'FontAwesome.swift'
 
   target 'StockWithPartnerTests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'GoogleSignIn'
+    
+    # プログレスバー
+    pod 'SVProgressHUD'
+    
+    # font awesone
+    pod 'FontAwesome.swift'
   end
 
   target 'StockWithPartnerUITests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'GoogleSignIn'
+    
+    # プログレスバー
+    pod 'SVProgressHUD'
+    
+    # font awesone
+    pod 'FontAwesome.swift'
   end
 
 end

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class HomeViewController: UIViewController {
 
@@ -20,6 +21,12 @@ class HomeViewController: UIViewController {
         
         let postPlace: UINib = UINib(nibName: "PostPlaceCell", bundle: nil)
         tableView.register(postPlace, forCellReuseIdentifier: "postPlace")
+        
+        self.tabBarItem.image = UIImage.fontAwesomeIcon(name: .home, textColor: UIColor.white, size: CGSize(width: 30, height: 30))
+        self.tabBarController?.tabBar.layer.borderWidth = 0.50
+        self.tabBarController?.tabBar.layer.borderColor = UIColor.clear.cgColor
+        self.tabBarController?.tabBar.clipsToBounds = true
+        
 
         // Do any additional setup after loading the view.
     }
