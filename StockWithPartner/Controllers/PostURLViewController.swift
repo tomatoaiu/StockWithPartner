@@ -65,11 +65,11 @@ class PostURLViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 		
-		postUrlButton.layer.borderWidth = 2
+		postUrlButton.layer.borderWidth = 1
 		postUrlButton.layer.borderColor = UIColor.white.cgColor
 		
 		postUrlTextField.delegate = self
-		postUrlTextField.layer.borderWidth = 2
+		postUrlTextField.layer.borderWidth = 1
 		postUrlTextField.layer.borderColor = UIColor.white.cgColor
 		postUrlTextField.becomeFirstResponder()
     }

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,10 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Y8-IK8">
-                                <rect key="frame" x="84" y="261" width="206" height="39"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-hF-1Vk">
+                                <rect key="frame" x="16" y="170" width="343" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Iz-Xg-dAS"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please Input url" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-Yq-izI">
+                                <rect key="frame" x="16" y="80" width="343" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G70-Rf-BsU"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Y8-IK8">
+                                <rect key="frame" x="60" y="260" width="255" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <state key="normal" title="追加">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -30,34 +50,19 @@
                                     <action selector="postUrlTapped:" destination="hJn-rK-1XJ" eventType="touchUpInside" id="cG9-UE-ctU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-hF-1Vk">
-                                <rect key="frame" x="30" y="186" width="314" height="42"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="L2x-AM-Nrc"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Please Input url" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-Yq-izI">
-                                <rect key="frame" x="30" y="137" width="220" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="OP5-hF-1Vk" firstAttribute="leading" secondItem="Etf-vL-u02" secondAttribute="leadingMargin" constant="14" id="52B-md-DYZ"/>
-                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="leading" secondItem="Etf-vL-u02" secondAttribute="leadingMargin" constant="68" id="6tZ-GF-QQE"/>
-                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="top" secondItem="OP5-hF-1Vk" secondAttribute="bottom" constant="33" id="KCw-SZ-Qm1"/>
-                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="dk9-Y8-IK8" secondAttribute="trailing" constant="85" id="KXd-j0-cIu"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="OP5-hF-1Vk" secondAttribute="bottom" constant="439" id="LiB-n1-0Ky"/>
-                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="OP5-hF-1Vk" secondAttribute="trailing" constant="31" id="caG-3A-g7G"/>
+                            <constraint firstItem="OP5-hF-1Vk" firstAttribute="leading" secondItem="WAY-Pf-W3w" secondAttribute="leading" constant="16" id="48T-1O-HEm"/>
+                            <constraint firstItem="4Uh-Yq-izI" firstAttribute="top" secondItem="WAY-Pf-W3w" secondAttribute="top" constant="60" id="4XC-H5-eRb"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="leading" secondItem="WAY-Pf-W3w" secondAttribute="leading" constant="60" id="Ipp-cA-zSd"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="OP5-hF-1Vk" secondAttribute="trailing" constant="16" id="NlF-ER-nbb"/>
+                            <constraint firstItem="OP5-hF-1Vk" firstAttribute="top" secondItem="4Uh-Yq-izI" secondAttribute="bottom" constant="50" id="U3B-4z-HT6"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="4Uh-Yq-izI" secondAttribute="trailing" constant="16" id="Wuo-qs-Nm7"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="top" secondItem="OP5-hF-1Vk" secondAttribute="bottom" constant="50" id="eGu-dh-Zkv"/>
+                            <constraint firstItem="dk9-Y8-IK8" firstAttribute="centerX" secondItem="Etf-vL-u02" secondAttribute="centerX" id="sAM-k8-1fa"/>
+                            <constraint firstItem="4Uh-Yq-izI" firstAttribute="leading" secondItem="WAY-Pf-W3w" secondAttribute="leading" constant="16" id="tAt-dP-36H"/>
+                            <constraint firstItem="WAY-Pf-W3w" firstAttribute="trailing" secondItem="dk9-Y8-IK8" secondAttribute="trailing" constant="60" id="yJB-5M-ZNd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WAY-Pf-W3w"/>
                     </view>
