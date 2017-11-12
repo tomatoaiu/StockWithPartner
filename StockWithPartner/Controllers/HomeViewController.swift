@@ -8,10 +8,12 @@
 
 import UIKit
 import FontAwesome_swift
+import ObjectMapper
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var postList: [Post?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,16 @@ class HomeViewController: UIViewController {
         self.tableView.estimatedRowHeight = 190
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.backgroundColor = UIColor.clear
+        
+        Post.index { (posts) in
+            
+            posts.forEach({ (post_object) in
+                if let post_object = post_object {
+                    let post: Post? = Mapper<Post>().map(JSON: post_object)
+                    self.postList.append(post)
+                }
+            })
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +58,6 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
